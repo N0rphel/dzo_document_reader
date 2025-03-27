@@ -158,16 +158,16 @@ export default function TTSPlayer() {
 	return (
 		<div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-100">
 			<div className="w-full max-w-md bg-white p-6 rounded-lg shadow-md">
-				<h1 className="text-2xl font-bold mb-4 text-center">
+				<h1 className="text-2xl font-bold mb-4 text-center text-black">
 					Text-to-Speech Generator
 				</h1>
 
 				{/* Message Input Form */}
 				<form onSubmit={handleSubmit} className="mb-4">
 					<textarea
-						className="w-full p-2 border rounded mb-2"
+						className="w-full p-2 border text-black rounded mb-2"
 						rows={4}
-						placeholder="Enter your message..."
+						placeholder="Enter your DZonkha Text"
 						value={message}
 						onChange={(e) => setMessage(e.target.value)}
 					/>
